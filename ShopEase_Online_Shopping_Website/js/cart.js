@@ -1,7 +1,3 @@
-// ================================
-// DISPLAY CART
-// ================================
-
 function displayCart() {
 
     const box = document.getElementById("cartItems");
@@ -20,9 +16,6 @@ function displayCart() {
 
     let total = 0;
     let itemCount = 0;
-
-
-    // Empty Cart
     if (cart.length === 0) {
 
         if (emptyCart) {
@@ -41,23 +34,14 @@ function displayCart() {
 
         return;
     }
-
-
-    // Hide Empty Cart
     if (emptyCart) {
         emptyCart.style.display = "none";
     }
-
-
-    // Display Cart Items
     cart.forEach(function(item) {
 
         const product = products.find(function(p) {
             return p.id === item.id;
         });
-
-
-        // If product is not found
         if (!product) {
             return;
         }
@@ -133,29 +117,14 @@ function displayCart() {
 
         `;
     });
-
-
-    // Update Total
     totalBox.textContent = total.toFixed(2);
-
-
-    // Update Subtotal
     if (subtotalBox) {
         subtotalBox.textContent = total.toFixed(2);
     }
-
-
-    // Update Item Count
     if (itemCountBox) {
         itemCountBox.textContent = itemCount;
     }
 }
-
-
-// ================================
-// CHANGE QUANTITY
-// ================================
-
 function changeQuantity(id, change) {
 
     const cart = getCart();
@@ -171,9 +140,6 @@ function changeQuantity(id, change) {
 
 
     item.quantity += change;
-
-
-    // Remove item if quantity becomes 0
     if (item.quantity <= 0) {
 
         const index = cart.indexOf(item);
@@ -186,11 +152,6 @@ function changeQuantity(id, change) {
 
     displayCart();
 }
-
-
-// ================================
-// REMOVE ITEM
-// ================================
 
 function removeItem(id) {
 
@@ -206,21 +167,11 @@ function removeItem(id) {
     displayCart();
 }
 
-
-// ================================
-// DISPLAY CART ON PAGE LOAD
-// ================================
-
 if (document.getElementById("cartItems")) {
 
     displayCart();
 
 }
-
-
-// ================================
-// CHECKOUT FORM
-// ================================
 
 const checkout = document.getElementById("checkoutForm");
 
