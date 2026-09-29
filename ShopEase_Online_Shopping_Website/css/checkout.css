@@ -1,0 +1,446 @@
+/* ================================
+   CHECKOUT PAGE
+================================ */
+
+.checkout-header {
+
+    background: linear-gradient(
+        135deg,
+        #eef4ff,
+        #f8faff
+    );
+
+    padding: 60px 5%;
+
+    text-align: center;
+
+}
+
+
+.checkout-header h1 {
+
+    font-size: 42px;
+
+    margin-bottom: 10px;
+
+    color: #222;
+
+}
+
+
+.checkout-header p {
+
+    color: #666;
+
+    font-size: 16px;
+
+}
+
+
+/* ================================
+   CHECKOUT AREA
+================================ */
+
+.checkout-area {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 50px auto;
+
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr;
+
+    gap: 30px;
+
+}
+
+
+/* ================================
+   FORM BOX
+================================ */
+
+.checkout-form-box {
+
+    background: #fff;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+}
+
+
+.checkout-form-box h2,
+.order-summary h2 {
+
+    font-size: 22px;
+
+    margin-bottom: 25px;
+
+    color: #222;
+
+}
+
+
+.checkout-form-box h2 i,
+.order-summary h2 i {
+
+    color: #2563eb;
+
+    margin-right: 8px;
+
+}
+
+
+/* ================================
+   FORM
+================================ */
+
+.form-group {
+
+    margin-bottom: 20px;
+
+}
+
+
+.form-group label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: 600;
+
+    color: #333;
+
+}
+
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+
+    font-family: inherit;
+
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 2px rgba(37, 99, 235, 0.1);
+
+}
+
+
+.form-group textarea {
+
+    resize: vertical;
+
+}
+
+
+/* ================================
+   PLACE ORDER BUTTON
+================================ */
+
+.place-order-btn {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.place-order-btn:hover {
+
+    background: #1d4ed8;
+
+}
+
+
+.place-order-btn i {
+
+    margin-right: 6px;
+
+}
+
+
+/* ================================
+   ORDER SUMMARY
+================================ */
+
+.order-summary {
+
+    background: #fff;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    height: fit-content;
+
+}
+
+
+/* ================================
+   CHECKOUT ITEMS
+================================ */
+
+.checkout-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #eee;
+
+}
+
+
+.checkout-item img {
+
+    width: 60px;
+
+    height: 60px;
+
+    object-fit: cover;
+
+    border-radius: 7px;
+
+}
+
+
+.checkout-item-info {
+
+    flex: 1;
+
+}
+
+
+.checkout-item-info h4 {
+
+    font-size: 15px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.checkout-item-info p {
+
+    color: #777;
+
+    font-size: 13px;
+
+}
+
+
+.checkout-item-price {
+
+    font-weight: bold;
+
+    color: #2563eb;
+
+}
+
+
+/* ================================
+   SUMMARY LINES
+================================ */
+
+.summary-line {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin: 15px 0;
+
+    color: #555;
+
+}
+
+
+.summary-line span:last-child {
+
+    font-weight: 600;
+
+    color: #222;
+
+}
+
+
+.order-summary hr {
+
+    border: none;
+
+    border-top: 1px solid #ddd;
+
+    margin: 20px 0;
+
+}
+
+
+.summary-total {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    margin-bottom: 25px;
+
+}
+
+
+.summary-total span:last-child {
+
+    color: #2563eb;
+
+}
+
+
+/* ================================
+   BACK TO CART
+================================ */
+
+.back-cart {
+
+    display: block;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    color: #2563eb;
+
+    font-weight: 600;
+
+}
+
+
+.back-cart:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 800px) {
+
+    .checkout-area {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .checkout-header h1 {
+
+        font-size: 32px;
+
+    }
+
+
+    .checkout-form-box,
+    .order-summary {
+
+        padding: 20px;
+
+    }
+
+}
+/* ================================
+   COMMON PAGE HEADINGS
+================================ */
+
+.page-header,
+.products-header,
+.checkout-header,
+.register-header,
+.login-header {
+    background: linear-gradient(135deg, #eef4ff, #f8faff);
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.page-header h1,
+.products-header h1,
+.checkout-header h1,
+.register-header h1,
+.login-header h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #222;
+    margin: 0 0 10px;
+}
+
+.page-header p,
+.products-header p,
+.checkout-header p,
+.register-header p,
+.login-header p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+}

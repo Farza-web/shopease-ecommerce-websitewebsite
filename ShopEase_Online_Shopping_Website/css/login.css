@@ -1,0 +1,480 @@
+/* ================================
+   LOGIN PAGE
+================================ */
+
+.login-section {
+    min-height: 650px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 70px 20px;
+
+    background: #f4f7fb;
+}
+
+
+/* ================================
+   LOGIN CONTAINER
+================================ */
+
+.login-container {
+    width: 90%;
+
+    max-width: 1000px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ================================
+   LEFT IMAGE
+================================ */
+
+.login-image {
+    min-height: 560px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 50px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(37, 99, 235, 0.82),
+            rgba(124, 58, 237, 0.82)
+        ),
+        url("https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+.login-image-content {
+    max-width: 380px;
+}
+
+
+.login-image-content > i {
+    width: 70px;
+
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.18);
+
+    font-size: 30px;
+
+    margin-bottom: 25px;
+}
+
+
+.login-image h2 {
+    font-size: 36px;
+
+    margin-bottom: 15px;
+}
+
+
+.login-image-content > p {
+    line-height: 1.7;
+
+    color: #eef2ff;
+
+    margin-bottom: 30px;
+}
+
+
+/* ================================
+   FEATURES
+================================ */
+
+.login-features p {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 15px 0;
+
+    color: #f5f7ff;
+}
+
+
+.login-features i {
+    width: 25px;
+
+    height: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: #2563eb;
+
+    font-size: 12px;
+}
+
+
+/* ================================
+   FORM AREA
+================================ */
+
+.login-form-area {
+    padding: 55px 50px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.login-heading {
+    margin-bottom: 30px;
+}
+
+
+.login-heading span {
+    color: #2563eb;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.login-heading h1 {
+    font-size: 36px;
+
+    margin: 8px 0;
+
+    color: #222;
+}
+
+
+.login-heading p {
+    color: #777;
+}
+
+
+/* ================================
+   INPUT
+================================ */
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+
+.input-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #333;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+.input-box {
+    display: flex;
+
+    align-items: center;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    padding: 0 14px;
+
+    transition: 0.3s;
+
+    background: white;
+}
+
+
+.input-box:focus-within {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+
+.input-box i {
+    color: #888;
+
+    margin-right: 10px;
+}
+
+
+.input-box input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    padding: 14px 5px;
+
+    font-size: 14px;
+
+    background: transparent;
+}
+
+
+/* ================================
+   OPTIONS
+================================ */
+
+.login-options {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin: 5px 0 25px;
+
+    font-size: 13px;
+}
+
+
+.login-options label {
+    color: #666;
+
+    cursor: pointer;
+}
+
+
+.login-options input {
+    margin-right: 5px;
+}
+
+
+.login-options a {
+    color: #2563eb;
+
+    text-decoration: none;
+}
+
+
+.login-options a:hover {
+    text-decoration: underline;
+}
+
+
+/* ================================
+   LOGIN BUTTON
+================================ */
+
+.login-btn {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.login-btn i {
+    margin-left: 8px;
+}
+
+
+.login-btn:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   REGISTER
+================================ */
+
+.register-text {
+    text-align: center;
+
+    margin-top: 25px;
+}
+
+
+.register-text p {
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+.register-text a {
+    color: #2563eb;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+.register-text a:hover {
+    text-decoration: underline;
+}
+
+
+/* ================================
+   BACK HOME
+================================ */
+
+.back-home {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-top: 20px;
+
+    color: #666;
+
+    text-decoration: none;
+
+    font-size: 13px;
+}
+
+
+.back-home:hover {
+    color: #2563eb;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 800px) {
+
+    .login-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .login-image {
+        min-height: 350px;
+
+        padding: 40px;
+    }
+
+
+    .login-image h2 {
+        font-size: 30px;
+    }
+
+
+    .login-form-area {
+        padding: 45px 35px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .login-section {
+        padding: 40px 15px;
+    }
+
+
+    .login-container {
+        width: 100%;
+    }
+
+
+    .login-image {
+        min-height: 300px;
+
+        padding: 30px;
+    }
+
+
+    .login-image h2 {
+        font-size: 27px;
+    }
+
+
+    .login-form-area {
+        padding: 35px 25px;
+    }
+
+
+    .login-heading h1 {
+        font-size: 30px;
+    }
+
+
+    .login-options {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+}

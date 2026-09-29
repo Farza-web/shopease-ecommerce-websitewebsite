@@ -1,0 +1,641 @@
+/* ================================
+   NEW ARRIVALS PAGE
+================================ */
+
+
+/* ================================
+   HERO
+================================ */
+
+.arrival-hero {
+
+    min-height: 420px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+    padding: 60px 20px;
+
+    background:
+        linear-gradient(
+            rgba(20, 30, 60, 0.65),
+            rgba(20, 30, 60, 0.65)
+        ),
+        url("https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1400");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+.arrival-hero-content {
+
+    max-width: 750px;
+}
+
+
+.arrival-hero-content span {
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+
+.arrival-hero h1 {
+
+    font-size: 52px;
+
+    margin: 15px 0;
+}
+
+
+.arrival-hero p {
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+
+.arrival-btn {
+
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    background: white;
+
+    color: #2563eb;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.arrival-btn:hover {
+
+    background: #2563eb;
+
+    color: white;
+}
+
+
+/* ================================
+   SECTION
+================================ */
+
+.new-arrivals-section {
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: 70px auto;
+}
+
+
+.arrival-heading {
+
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 40px;
+}
+
+
+.arrival-heading span {
+
+    color: #2563eb;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.arrival-heading h2 {
+
+    font-size: 36px;
+
+    color: #222;
+
+    margin: 10px 0;
+}
+
+
+.arrival-heading p {
+
+    color: #666;
+
+    line-height: 1.6;
+}
+
+
+/* ================================
+   CONTROLS
+================================ */
+
+.arrival-controls {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+
+.arrival-controls p {
+
+    color: #666;
+}
+
+
+.arrival-controls select {
+
+    padding: 10px 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 6px;
+
+    background: white;
+
+    cursor: pointer;
+}
+
+
+/* ================================
+   PRODUCT GRID
+================================ */
+
+.arrival-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+
+    align-items: stretch;
+}
+
+
+/* ================================
+   PRODUCT CARD
+================================ */
+
+.arrival-card {
+
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+
+    display: flex;
+
+    flex-direction: column;
+
+    height: 100%;
+}
+
+
+.arrival-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.13);
+}
+
+
+/* ================================
+   IMAGE
+================================ */
+
+.arrival-image {
+
+    height: 220px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.arrival-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.4s;
+}
+
+
+.arrival-card:hover .arrival-image img {
+
+    transform: scale(1.06);
+}
+
+
+/* ================================
+   BADGE
+================================ */
+
+.new-badge {
+
+    position: absolute;
+
+    top: 12px;
+
+    left: 12px;
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 6px 10px;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+.discount-badge {
+
+    position: absolute;
+
+    top: 12px;
+
+    right: 12px;
+
+    background: #ef4444;
+
+    color: white;
+
+    padding: 6px 10px;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+/* ================================
+   CARD CONTENT
+================================ */
+
+.arrival-info {
+
+    padding: 18px;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    flex: 1;
+}
+
+
+.arrival-category {
+
+    color: #777;
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+.arrival-info h3 {
+
+    color: #222;
+
+    font-size: 18px;
+
+    margin: 8px 0;
+}
+
+
+.arrival-rating {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 3px;
+
+    margin-bottom: 8px;
+
+    color: #f59e0b;
+}
+
+
+.arrival-rating span {
+
+    color: #777;
+
+    font-size: 13px;
+
+    margin-left: 4px;
+}
+
+
+.arrival-price {
+
+    color: #2563eb;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+/* ================================
+   BUTTON
+================================ */
+
+.arrival-add-btn {
+
+    margin-top: auto;
+
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #2563eb;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.arrival-add-btn:hover {
+
+    background: #1d4ed8;
+}
+
+
+/* ================================
+   EMPTY
+================================ */
+
+.arrival-empty {
+
+    display: none;
+
+    text-align: center;
+
+    padding: 60px 20px;
+}
+
+
+.arrival-empty i {
+
+    font-size: 50px;
+
+    color: #aaa;
+
+    margin-bottom: 15px;
+}
+
+
+.arrival-empty h3 {
+
+    font-size: 22px;
+
+    margin-bottom: 8px;
+}
+
+
+.arrival-empty p {
+
+    color: #777;
+}
+
+
+/* ================================
+   PROMOTION
+================================ */
+
+.arrival-promotion {
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: 70px auto;
+
+    padding: 60px 40px;
+
+    text-align: center;
+
+    color: white;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #7c3aed
+        );
+}
+
+
+.arrival-promotion div {
+
+    max-width: 700px;
+
+    margin: auto;
+}
+
+
+.arrival-promotion span {
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.arrival-promotion h2 {
+
+    font-size: 34px;
+
+    margin: 12px 0;
+}
+
+
+.arrival-promotion p {
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+
+.arrival-promotion a {
+
+    display: inline-block;
+
+    background: white;
+
+    color: #2563eb;
+
+    padding: 13px 25px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.arrival-promotion a:hover {
+
+    background: #111827;
+
+    color: white;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1000px) {
+
+    .arrival-grid {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+    .arrival-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .arrival-hero h1 {
+
+        font-size: 40px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .arrival-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .arrival-controls {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+
+    .arrival-hero {
+
+        min-height: 350px;
+    }
+
+
+    .arrival-hero h1 {
+
+        font-size: 32px;
+    }
+
+
+    .arrival-heading h2 {
+
+        font-size: 28px;
+    }
+
+
+    .arrival-promotion {
+
+        padding: 40px 20px;
+    }
+
+
+    .arrival-promotion h2 {
+
+        font-size: 27px;
+    }
+
+}
