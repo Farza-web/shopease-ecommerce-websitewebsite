@@ -1,7 +1,3 @@
-/* ================================
-   NEW ARRIVALS PRODUCTS
-================================ */
-
 const newProducts = [
 
     {
@@ -94,11 +90,6 @@ const newProducts = [
 
 ];
 
-
-/* ================================
-   ELEMENTS
-================================ */
-
 const arrivalList =
     document.getElementById("arrivalList");
 
@@ -113,11 +104,6 @@ const productCount =
 
 const arrivalEmpty =
     document.getElementById("arrivalEmpty");
-
-
-/* ================================
-   SHOW PRODUCTS
-================================ */
 
 function showNewProducts(list) {
 
