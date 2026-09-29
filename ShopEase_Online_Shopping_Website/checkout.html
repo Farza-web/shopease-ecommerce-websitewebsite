@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase - Checkout</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checkout.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================================
+     TOP BAR
+================================ -->
+
+<div class="top-bar">
+
+    <p>Free Shipping on Orders Over $50</p>
+
+    <div>
+        <span>Help</span>
+        <span>Contact</span>
+    </div>
+
+</div>
+
+
+<!-- ================================
+     HEADER
+================================ -->
+
+<header class="main-header">
+
+    <a href="index.html" class="logo">
+        ShopEase
+    </a>
+
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            placeholder="Search products..."
+        >
+
+        <button>
+            <i class="fa-solid fa-search"></i>
+        </button>
+
+    </div>
+
+
+    <div class="header-actions">
+
+        <a href="login.html">
+
+            <i class="fa-regular fa-user"></i>
+
+            Account
+
+        </a>
+
+
+        <a href="#">
+
+            <i class="fa-regular fa-heart"></i>
+
+            Wishlist
+
+        </a>
+
+
+        <a href="cart.html">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            Cart
+
+            <span class="cart-count">0</span>
+
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- ================================
+     NAVIGATION
+================================ -->
+
+<nav class="navbar">
+
+    <div class="nav-links">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="products.html">
+            Products
+        </a>
+
+        <a href="category.html">
+            Categories
+        </a>
+
+        <a href="new-arrivals.html">
+            New Arrivals
+        </a>
+
+        <a href="cart.html">
+            Cart
+        </a>
+
+        <a href="login.html">
+            Login
+        </a>
+
+        <a href="register.html">
+            Register
+        </a>
+
+    </div>
+
+</nav>
+
+
+<!-- ================================
+     CHECKOUT HEADER
+================================ -->
+
+<section class="checkout-header">
+
+    <h1>Checkout</h1>
+
+    <p>
+        Complete your order by providing your information.
+    </p>
+
+</section>
+
+
+<!-- ================================
+     CHECKOUT AREA
+================================ -->
+
+<section class="checkout-area">
+
+
+    <!-- ============================
+         CUSTOMER INFORMATION
+    ============================= -->
+
+    <div class="checkout-form-box">
+
+        <h2>
+            <i class="fa-solid fa-user"></i>
+            Customer Information
+        </h2>
+
+
+        <form id="checkoutForm">
+
+
+            <div class="form-group">
+
+                <label for="fullName">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="fullName"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="address">
+                    Delivery Address
+                </label>
+
+                <textarea
+                    id="address"
+                    placeholder="Enter your full address"
+                    rows="4"
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="phone">
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter your phone number"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="paymentMethod">
+                    Payment Method
+                </label>
+
+                <select
+                    id="paymentMethod"
+                    required
+                >
+
+                    <option value="">
+                        Select Payment Method
+                    </option>
+
+                    <option value="cod">
+                        Cash on Delivery
+                    </option>
+
+                    <option value="card">
+                        Card Payment
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="place-order-btn"
+            >
+
+                <i class="fa-solid fa-check"></i>
+
+                Place Order
+
+            </button>
+
+
+        </form>
+
+    </div>
+
+
+    <!-- ============================
+         ORDER SUMMARY
+    ============================= -->
+
+    <div class="order-summary">
+
+        <h2>
+            <i class="fa-solid fa-cart-shopping"></i>
+            Order Summary
+        </h2>
+
+
+        <div id="checkoutItems">
+
+            <!-- Items will appear here -->
+
+        </div>
+
+
+        <div class="summary-line">
+
+            <span>
+                Items
+            </span>
+
+            <span id="checkoutItemCount">
+                0
+            </span>
+
+        </div>
+
+
+        <div class="summary-line">
+
+            <span>
+                Subtotal
+            </span>
+
+            <span>
+                $<span id="checkoutSubtotal">0.00</span>
+            </span>
+
+        </div>
+
+
+        <div class="summary-line">
+
+            <span>
+                Shipping
+            </span>
+
+            <span>
+                Free
+            </span>
+
+        </div>
+
+
+        <hr>
+
+
+        <div class="summary-total">
+
+            <span>
+                Total
+            </span>
+
+            <span>
+                $<span id="checkoutTotal">0.00</span>
+            </span>
+
+        </div>
+
+
+        <a
+            href="cart.html"
+            class="back-cart"
+        >
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            Back to Cart
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================================
+     FOOTER
+================================ -->
+
+<footer>
+
+    <p>
+        © 2026 ShopEase. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- ================================
+     JAVASCRIPT
+================================ -->
+
+<script src="js/main.js"></script>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/checkout.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase - New Arrivals</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/new-arrivals.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+
+<!-- ================================
+     TOP BAR
+================================ -->
+
+<div class="top-bar">
+
+    <p>Free Shipping on Orders Over $50</p>
+
+    <div>
+        <span>Help Center</span>
+        <span> | </span>
+        <span>Track Order</span>
+    </div>
+
+</div>
+
+
+<!-- ================================
+     NAVBAR
+================================ -->
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-bag-shopping"></i>
+            ShopEase
+        </a>
+
+
+        <div class="search-box">
+
+            <input type="text"
+                   id="arrivalSearch"
+                   placeholder="Search new arrivals...">
+
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </div>
+
+
+        <div class="nav-icons">
+
+            <a href="login.html">
+                <i class="fa-regular fa-user"></i>
+                <span>Account</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-regular fa-heart"></i>
+                <span>Wishlist</span>
+            </a>
+
+            <a href="cart.html" class="cart-icon">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span>Cart</span>
+
+                <span class="cart-count">0</span>
+
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <div class="menu">
+
+        <a href="index.html">Home</a>
+
+        <a href="products.html">Products</a>
+
+        <a href="category.html">Categories</a>
+
+        <a href="new-arrivals.html" class="active">
+            New Arrivals
+        </a>
+
+        <a href="cart.html">Cart</a>
+
+    </div>
+
+</header>
+
+
+<!-- ================================
+     NEW ARRIVALS HEADER
+================================ -->
+
+<section class="arrival-hero">
+
+    <div class="arrival-hero-content">
+
+        <span>JUST LANDED</span>
+
+        <h1>New Arrivals</h1>
+
+        <p>
+            Discover our latest products, fresh styles
+            and exciting new collections.
+        </p>
+
+        <a href="#newProducts" class="arrival-btn">
+            Explore New Arrivals
+            <i class="fa-solid fa-arrow-down"></i>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================================
+     PRODUCTS SECTION
+================================ -->
+
+<section class="new-arrivals-section" id="newProducts">
+
+    <div class="arrival-heading">
+
+        <span>LATEST PRODUCTS</span>
+
+        <h2>Fresh From Our Store</h2>
+
+        <p>
+            Check out the newest products added to ShopEase.
+        </p>
+
+    </div>
+
+
+    <!-- Filter -->
+
+    <div class="arrival-controls">
+
+        <p>
+            <strong id="productCount">8</strong>
+            New Products
+        </p>
+
+        <select id="arrivalSort">
+
+            <option value="default">
+                Sort By
+            </option>
+
+            <option value="low">
+                Price: Low to High
+            </option>
+
+            <option value="high">
+                Price: High to Low
+            </option>
+
+            <option value="name">
+                Name
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <!-- Product Cards -->
+
+    <div class="arrival-grid" id="arrivalList"></div>
+
+
+    <!-- No Product -->
+
+    <div class="arrival-empty" id="arrivalEmpty">
+
+        <i class="fa-solid fa-box-open"></i>
+
+        <h3>No Products Found</h3>
+
+        <p>
+            Try searching for another product.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================================
+     PROMOTION
+================================ -->
+
+<section class="arrival-promotion">
+
+    <div>
+
+        <span>SHOP THE LATEST</span>
+
+        <h2>
+            Fresh Products. Fresh Style.
+        </h2>
+
+        <p>
+            Explore our complete collection and
+            find something perfect for you.
+        </p>
+
+        <a href="products.html">
+            View All Products
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================================
+     FOOTER
+================================ -->
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-column">
+
+            <h3>
+                <i class="fa-solid fa-bag-shopping"></i>
+                ShopEase
+            </h3>
+
+            <p>
+                Your simple and trusted online shopping
+                destination.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Quick Links</h4>
+
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="category.html">Categories</a>
+            <a href="new-arrivals.html">New Arrivals</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Customer Service</h4>
+
+            <a href="#">Help Center</a>
+            <a href="#">Shipping</a>
+            <a href="#">Returns</a>
+            <a href="#">Contact Us</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Follow Us</h4>
+
+            <div class="social-icons">
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 ShopEase. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/main.js"></script>
+<script src="js/new-arrivals.js"></script>
+
+</body>
+
+</html>

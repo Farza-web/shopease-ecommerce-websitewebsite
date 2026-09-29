@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase - Contact</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+
+<div class="top-bar">
+
+    <p>Free Shipping on Orders Over $50</p>
+
+    <div>
+        <span>Help</span>
+        <span>Contact</span>
+    </div>
+
+</div>
+
+
+<header class="main-header">
+
+    <a href="index.html" class="logo">
+        ShopEase
+    </a>
+
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            placeholder="Search products..."
+        >
+
+        <button>
+            <i class="fa-solid fa-search"></i>
+        </button>
+
+    </div>
+
+
+    <div class="header-actions">
+
+        <a href="login.html">
+            <i class="fa-regular fa-user"></i>
+            Account
+        </a>
+
+        <a href="#">
+            <i class="fa-regular fa-heart"></i>
+            Wishlist
+        </a>
+
+        <a href="cart.html">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            Cart
+
+            <span class="cart-count">0</span>
+
+        </a>
+
+    </div>
+
+</header>
+
+
+<nav class="navbar">
+
+    <div class="nav-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="products.html">Products</a>
+
+        <a href="category.html">Categories</a>
+
+        <a href="new-arrivals.html">New Arrivals</a>
+
+        <a href="deals.html">Deals</a>
+
+        <a href="about.html">About Us</a>
+
+        <a href="contact.html" class="active">Contact</a>
+
+        <a href="cart.html">Cart</a>
+
+        <a href="login.html">Login</a>
+
+    </div>
+
+</nav>
+
+
+<section class="page-header">
+
+    <h1>Contact Us</h1>
+
+    <p>We would love to hear from you.</p>
+
+</section>
+
+
+<section class="contact-section">
+
+
+    <!-- CONTACT INFORMATION -->
+
+    <div class="contact-info">
+
+        <h2>Get In Touch</h2>
+
+        <p>
+            Have a question or need help?
+            Feel free to contact us.
+        </p>
+
+
+        <div class="contact-item">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <div>
+
+                <h3>Address</h3>
+
+                <p>
+                    Dhaka, Bangladesh
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="contact-item">
+
+            <i class="fa-solid fa-phone"></i>
+
+            <div>
+
+                <h3>Phone</h3>
+
+                <p>
+                    +880 1234-567890
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="contact-item">
+
+            <i class="fa-solid fa-envelope"></i>
+
+            <div>
+
+                <h3>Email</h3>
+
+                <p>
+                    support@shopease.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="contact-item">
+
+            <i class="fa-solid fa-clock"></i>
+
+            <div>
+
+                <h3>Working Hours</h3>
+
+                <p>
+                    Sat - Thu: 9:00 AM - 8:00 PM
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- CONTACT FORM -->
+
+    <div class="contact-form">
+
+        <h2>Send Us a Message</h2>
+
+
+        <form id="contactForm">
+
+
+            <div class="form-group">
+
+                <label for="name">
+                    Your Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="subject">
+                    Subject
+                </label>
+
+                <input
+                    type="text"
+                    id="subject"
+                    placeholder="Enter subject"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="message">
+                    Message
+                </label>
+
+                <textarea
+                    id="message"
+                    rows="5"
+                    placeholder="Write your message..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="contact-btn"
+            >
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+                Send Message
+
+            </button>
+
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <p>
+        © 2026 ShopEase. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="js/main.js"></script>
+
+
+<script>
+
+    const contactForm =
+        document.getElementById("contactForm");
+
+    if (contactForm) {
+
+        contactForm.addEventListener(
+            "submit",
+            function(e) {
+
+                e.preventDefault();
+
+                alert(
+                    "Thank you! Your message has been sent."
+                );
+
+                contactForm.reset();
+
+            }
+        );
+
+    }
+
+</script>
+
+</body>
+</html>
